@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-height: 1.6;
+    background: url(./marie-michele-bouchard-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    backdrop-filter: blur(1px); 
+}
+
+body::before {
+    content: " ";
+    position: absolute;
+    top: 0; left: -25%;
+    width: 50%;
+    height: 100%;
+    background: #9335ff;
+    opacity: 0.8;
+}
+
+
+.form-container {
+    position: absolute;
+    top: 50%; left: 25%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .5);
+}
+
+
+.form-container h2 {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.form-container .form-group input {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #777;
+    outline: none;
+    padding: 15px;
+    padding-left: 30px;
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.form-container .form-group input:focus,
+.form-container .form-group input:valid {
+    border-bottom: 2px solid #9335ff;
+}
+
+/* Icon Font Positioning  */
+
+.form-container .user-name {
+    position: relative;
+}
+
+.form-container .fa-user  {
+    position: absolute; 
+	top: 13px; left: 8px;
+    color: #777;
+}
+
+
+.form-container .mail {
+    position: relative;
+}
+
+.form-container .fa-envelope {
+    position: absolute; 
+	top: 15px; left: 5px;
+    color: #777;
+}
+
+.form-container .unlock {
+    position: relative;
+}
+
+.form-container .fa-unlock {
+    position: absolute; 
+	top: 13px; left: 5px;
+    color: #777;
+}
+
+.form-container .lock {
+    position: relative;
+}
+
+.form-container .fa-lock {
+    position: absolute; 
+	top: 13px; left: 5px;
+    color: #777;
+}
+
+.form-container .form-group input[type="submit"] {
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    background: #9335ff;
+    color: #fff;
+    text-align: center;
+}
